@@ -1,12 +1,25 @@
-import React from "react";
+import React from 'react';
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
-import "./home.css" 
+import "./home.css"
+import { ContactForm } from '../components/contactForm';
+import { Modal1 } from '../components/modal1';
+import { Modal2 } from '../components/modal2';
+import { Modal3 } from '../components/modal3';
+import Tiktok from "../images/tiktok.png";
+import Plus from "../images/plus-sign.png";
+import Phone from "../images/phone2.png";
 
 export const Home = () => {
+
+    const [modalShow1, setModalShow1] = React.useState(false);
+    const [modalShow2, setModalShow2] = React.useState(false);
+    const [modalShow3, setModalShow3] = React.useState(false);
+
     return (
         <div className="">
-            {/*Navbar*/}
+
+            {/* Navbar Starts */}
             <Navbar style={{ backgroundColor: "#1c1d1f" }} sticky="top" expand="lg" variant="dark">
                 <Container fluid className="mx-3 my-1 pt-1">
                     <Navbar.Brand>
@@ -16,7 +29,7 @@ export const Home = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav text-white">
-                        <Nav className="ms-auto fs-5">
+                        <Nav className="ms-auto fs-4">
                             <a href="#about" className="text-decoration-none text-white me-4">
                                 <Nav.Item>About</Nav.Item>
                             </a>
@@ -33,206 +46,203 @@ export const Home = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            {/* Navbar Ends */}
 
-            {/*Hero Section*/}
+            {/* Hero Section Starts */}
             <div
-                className="p-5 text-start bg-image mb-5 myBg" id="home"
+                className="p-4 text-start bg-image mb-5 heroBg" id="home"
             >
                 <div className="d-flex justify-content-center align-items-center h-100">
                     <div className="text-white text-center">
+
+                        {/* Hero Text */}
                         <h1 className="mb-3">
-                            Ventanas con doble vidrio herméticas, hechas a medida para tu
-                            negocio
+                            Welcome to my page!
                         </h1>
-                        <h4 className="mb-3">
-                            WindowArtisansVE trae una solución al problema de ventanas con
-                            doble vidrio de tamaño estándar, difíciles de mantener y de
-                            instalar.
-                        </h4>
-                        <a class="btn btn-dark text-white p-3 fs-5" href="#portfolio" role="button">Check my portfolio</a>
+                        <h3 className="mb-5">
+                            My name is Paola, I am front-end developer based in Florida, US.
+                        </h3>
+
+                        {/* Call to Action */}
+                        <a className="btn btn-dark text-white px-3 pt-3" href="#portfolio" role="button"><h4>Check my portfolio</h4></a>
                     </div>
                 </div>
             </div>
+            {/*Hero Section Ends */}
 
-            {/*About Section*/}
+            {/*About Section Starts */}
             <div className="m-5" id="about">
-                <h2 className="mb-4">
-                    About Me
-                    <hr className="featurette-divider mt-3" />
-                </h2>
+                {/* Header */}
+                <div className='col-3 mx-auto text-center'>
+                    <h2 className="mb-4">
+                        <i className="fa-solid fa-user fs-3 me-3 mb-2" />
+                        About Me
+                        <hr className="featurette-divider mt-3" />
+                    </h2>
+                </div>
+
+                {/* About Me Content */}
                 <div className="row">
-                    <div className="col my-3">
+                    <div className="col-11 my-3 mx-auto">
                         <h4>
-                            Somos una empresa localizada en Guarenas, Venezuela, liderada por un
-                            ingeniero civil con más de 40 años de experiencia en planeación y
-                            contrucción de plantas farmaéeuticas en Venezuela.
+                            I am a front-end developer who is constantly learning new skills
+                            and is very fond of JavaScript and React.
                         </h4>
                         <br />
                         <h4>
-                            Nos dimos cuenta del problema en el mercado de ventanas herméticas
-                            con doble vidrio; todas son del mismo tamaño, y son difíciles de
-                            mantener e instalar.
+                            Back in 2016, I came to the United States from Venezuela, and
+                            I am eternally grateful for what this country has given me
+                            and allowed me to achieve.
                         </h4>
                         <br />
                         <h4>
-                            Por ello, creamos una ventana que cumple todas las funciones de la
-                            original, pero resuelve muchos dolores de cabeza con mejor
-                            tecnología y tomando en consideración los requerimientos de cada
-                            empresa.
+                            I am working on becoming a great front-end developer, and
+                            I hope to inspire more immigrant women like me to join the
+                            tech industry!
                         </h4>
                     </div>
                 </div>
             </div>
+            {/*About Section Ends */}
 
-            {/*Portfolio Section*/}
+            {/* Portfolio Section Starts */}
             <div className="m-5" id="portfolio">
-                <h2 className="mb-4">
-                    Portfolio
-                    <hr className="featurette-divider mt-3" />
-                </h2>
-                <div className="row">
-                    <div class="card-deck my-3">
-                        <div class="card mb-4">
-                            <img class="card-img-top" src="..." alt="" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                {/* Header */}
+                <div className='col-3 mx-auto text-center'>
+                    <h2 className="mb-4">
+                        <i className="fa-solid fa-laptop fs-3 me-3 mb-2" />
+                        Portfolio
+                        <hr className="featurette-divider mt-3" />
+                    </h2>
+                </div>
+
+                {/* Modals */}
+                <Modal1
+                    show={modalShow1}
+                    onHide={() => setModalShow1(false)}
+                />
+                <Modal2
+                    show={modalShow2}
+                    onHide={() => setModalShow2(false)}
+                />
+                <Modal3
+                    show={modalShow3}
+                    onHide={() => setModalShow3(false)}
+                />
+
+                {/* Projects */}
+                <div className='row justify-content-center flex-wrap'>
+                    <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
+                        <div className='mx-auto'>
+                            <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
+                                <img className="img-fluid image" src={Phone} alt="Thumbnail of the roadbros project" />
+                                <div class="overlay" onClick={() => setModalShow1(true)} >
+                                    <div className='d-flex align-items-center justify-content-center h-100 w-100'>
+                                        <img src={Plus} width={100} alt="Thumbnail of the roadbros project" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="card mb-4" >
-                            <img class="card-img-top" src="..." alt="" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
+                        <div className='mx-auto'>
+                            <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
+                                <img className="img-fluid image" src={Phone} />
+                                <div class="overlay" onClick={() => setModalShow2(true)}>
+                                    <div className='d-flex align-items-center justify-content-center h-100 w-100'>
+                                        <img src={Plus} width={100} />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="card mb-4">
-                            <img class="card-img-top" src="..." alt="" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
+                        <div className='mx-auto'>
+                            <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
+                                <img className="img-fluid image" src={Phone} />
+                                <div class="overlay" onClick={() => setModalShow3(true)} >
+                                    <div className='d-flex align-items-center justify-content-center h-100 w-100'>
+                                        <img src={Plus} width={100} />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* Portfolio Section Ends */}
 
-            {/*Contact Section*/}
+            {/* Contact Section Starts */}
             <div className="m-5" id="contact">
-                <h2 className="mb-4">
-                    <i className="fa-solid fa-envelope fs-3 me-2 mb-2" />
-                    Contact Me
-                    <hr className="featurette-divider mt-3" />
-                </h2>
-                <div className="col my-3">
-                    <div className="mb-3 fs-4">
-                        <label for="exampleFormControlInput1" className="form-label">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            id="exampleFormControlInput1"
-                            placeholder="nice.to.meet.you@gmail.com"
-                        />
-                    </div>
-                    <div className="mb-4 fs-4">
-                        <label for="exampleFormControlTextarea1" className="form-label">
-                            Message{" "}
-                        </label>
-                        <textarea
-                            className="form-control"
-                            id="exampleFormControlTextarea1"
-                            rows="6"
-                            placeholder="Thank for contacting me!"
-                        ></textarea>
-                    </div>
-                    <div className="bg-dark col-xs-3 col-3 col-md-2 col-lg-2 col-xl-2 p-2 pt-3 text-center text-white">
-                        <h5>Enviar</h5>
-                    </div>
+                {/* Header */}
+                <div className='col-3 mx-auto text-center'>
+                    <h2 className="mb-4">
+                        <i className="fa-solid fa-envelope fs-3 me-3 mb-2" />
+                        Contact Me
+                        <hr className="featurette-divider mt-3" />
+                    </h2>
                 </div>
-            </div>
 
-            {/*Footer*/}
-            <MDBFooter style={{ backgroundColor: "#2b2c2e" }} className="text-white">
+                {/* Contact Form */}
+                <ContactForm />
+            </div>
+            {/* Contact Section Ends */}
+
+            {/* Footer Starts */}
+            <MDBFooter style={{ backgroundColor: "#2b2c2e" }} className="text-white text-center">
                 <MDBContainer className="p-4">
                     <MDBRow>
-                        <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
-                            <h3 className="">Paola Sanchez</h3>
-
-                            <p>
-                                Front-end developer
-                            </p>
+                        <MDBCol lg="6" md="12">
+                            <h3>Paola Sanchez</h3>
+                            <h5>Front-end developer</h5>
                         </MDBCol>
 
-                        <MDBCol lg="2" md="4" sm="4" className="mb-4 mb-md-0">
-                            <h5 className="text-uppercase mb-1" style={{ marginBottom: "0px" }}>
-                                Compañía
-                            </h5>
+                        <MDBCol lg="6" md="12" className="mt-4 mb-3">
+                            <a
+                                href="www.linkedin.com/in/paola-sanchez98"
+                                style={{ textDecoration: "none" }}
+                            >
+                                <span className="text-white">
+                                    <i className="fab fa-linkedin-in fs-4 me-3" />
+                                </span>
+                            </a>
 
-                            <ul className="list-unstyled mb-1">
-                                <li>
-                                    <a href="#home" className="text-decoration-none text-white">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#about" className="text-decoration-none text-white">
-                                        Conócenos
-                                    </a>
-                                </li>
-                            </ul>
-                        </MDBCol>
+                            <a
+                                href="https://github.com/paola-codes"
+                                style={{ textDecoration: "none" }}
+                            >
+                                <span className="text-white">
+                                    <i className="fab fa-github fs-4 me-3" />
+                                </span>
+                            </a>
 
-                        <MDBCol lg="2" md="4" sm="4" className="mb-4 mb-md-0">
-                            <h5 className="text-uppercase mb-1">Ventanas</h5>
+                            <a
+                                href="https://www.instagram.com/paola_codes/"
+                                style={{ textDecoration: "none" }}
+                            >
+                                <span className="text-white">
+                                    <i className="fab fa-instagram fs-4 me-3" />
+                                </span>
+                            </a>
 
-                            <ul className="list-unstyled mb-1">
-                                <li>
-                                    <a href="#home" className="text-decoration-none text-white">
-                                        Características
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#home" className="text-decoration-none text-white">
-                                        Ventajas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#home" className="text-decoration-none text-white">
-                                        Proceso
-                                    </a>
-                                </li>
-                            </ul>
-                        </MDBCol>
-
-                        <MDBCol lg="2" md="4" sm="4" className="mb-4 mb-md-0">
-                            <h5 className="text-uppercase mb-1">Legal</h5>
-
-                            <ul className="list-unstyled">
-                                <li>
-                                    <a href="#home" className="text-decoration-none text-white">
-                                        Política de privacidad
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#home" className="text-decoration-none text-white">
-                                        Términos y Condiciones
-                                    </a>
-                                </li>
-                            </ul>
+                            <a
+                                href="https://www.tiktok.com/@paola_codes"
+                                style={{ textDecoration: "none" }}
+                            >
+                                <span className="text-white">
+                                    <img src={Tiktok} width={20} className="mb-2" />
+                                </span>
+                            </a>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
 
                 <div className="text-center p-3" style={{ backgroundColor: "#1c1d1f" }}>
                     © 2022 Copyright:
-                    <span className="text-white ps-2">WindowArtisansVE</span>
+                    <span className="text-white ps-2">Paola Sanchez</span>
                 </div>
             </MDBFooter>
-        </div>
+            {/* Footer Ends */}
+        </div >
     );
 };
