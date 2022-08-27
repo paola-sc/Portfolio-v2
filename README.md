@@ -16,7 +16,7 @@ npm run start
 
 ## Acknowledgments
 
-Website I used:
+Websites I used:
 * https://create-react-app.dev/
 * https://getbootstrap.com/
 * https://react-bootstrap.github.io/
