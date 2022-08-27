@@ -8,7 +8,7 @@ This portfolio was made with create-react-app, bootstrap, react-bootstrap, and m
 
 ## Executing program
 
-* The only command you need to run is:
+The only command you need to run is:
 
 ```
 npm run start
