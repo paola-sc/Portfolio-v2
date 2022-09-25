@@ -8,13 +8,7 @@ This portfolio was made with create-react-app, bootstrap, react-bootstrap, and m
 
 ## Executing program
 
-First, navigate to the portfolio folder
-
-```
-cd portfolio
-```
-
-Then, run the following command:
+The only thing you need to do is run the following command:
 
 ```
 npm run start

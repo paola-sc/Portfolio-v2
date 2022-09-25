@@ -33,12 +33,6 @@ export const Home = () => {
                             <a href="#about" className="text-decoration-none text-white me-4">
                                 <Nav.Item>About</Nav.Item>
                             </a>
-                            <a
-                                href="#portfolio"
-                                className="text-decoration-none text-white me-4"
-                            >
-                                <Nav.Item>Portfolio</Nav.Item>
-                            </a>
                             <a href="#contact" className="text-decoration-none text-white me-4">
                                 <Nav.Item>Contact</Nav.Item>
                             </a>
@@ -54,7 +48,6 @@ export const Home = () => {
             >
                 <div className="d-flex justify-content-center align-items-center h-100">
                     <div className="text-white text-center">
-
                         {/* Hero Text */}
                         <h1 className="mb-3">
                             Welcome to my page!
@@ -73,7 +66,7 @@ export const Home = () => {
             {/*About Section Starts */}
             <div className="m-5" id="about">
                 {/* Header */}
-                <div className='col-3 mx-auto text-center'>
+                <div className='col-11 col-md-6 mx-auto text-center'>
                     <h2 className="mb-4">
                         <i className="fa-solid fa-user fs-3 me-3 mb-2" />
                         About Me
@@ -108,7 +101,7 @@ export const Home = () => {
             {/* Portfolio Section Starts */}
             <div className="m-5" id="portfolio">
                 {/* Header */}
-                <div className='col-3 mx-auto text-center'>
+                <div className='col-11 col-md-6 mx-auto text-center'>
                     <h2 className="mb-4">
                         <i className="fa-solid fa-laptop fs-3 me-3 mb-2" />
                         Portfolio
@@ -135,10 +128,10 @@ export const Home = () => {
                     <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
                         <div className='mx-auto'>
                             <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image" src={Phone} alt="Thumbnail of the roadbros project" />
+                                <img className="img-fluid image" src={Phone} alt="Project thumbnail" />
                                 <div class="overlay" onClick={() => setModalShow1(true)} >
                                     <div className='d-flex align-items-center justify-content-center h-100 w-100'>
-                                        <img src={Plus} width={100} alt="Thumbnail of the roadbros project" />
+                                        <img src={Plus} width={100} alt="Plus sign" />
                                     </div>
                                 </div>
                             </div>
@@ -147,10 +140,10 @@ export const Home = () => {
                     <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
                         <div className='mx-auto'>
                             <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image" src={Phone} />
+                                <img className="img-fluid image" src={Phone} alt="Project thumbnail"/>
                                 <div class="overlay" onClick={() => setModalShow2(true)}>
                                     <div className='d-flex align-items-center justify-content-center h-100 w-100'>
-                                        <img src={Plus} width={100} />
+                                        <img src={Plus} width={100} alt="Plus sign"/>
                                     </div>
                                 </div>
                             </div>
@@ -159,10 +152,10 @@ export const Home = () => {
                     <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
                         <div className='mx-auto'>
                             <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image" src={Phone} />
+                                <img className="img-fluid image" src={Phone} alt="Project thumbnail"/>
                                 <div class="overlay" onClick={() => setModalShow3(true)} >
                                     <div className='d-flex align-items-center justify-content-center h-100 w-100'>
-                                        <img src={Plus} width={100} />
+                                        <img src={Plus} width={100} alt="Plus sign" />
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +168,7 @@ export const Home = () => {
             {/* Contact Section Starts */}
             <div className="m-5" id="contact">
                 {/* Header */}
-                <div className='col-3 mx-auto text-center'>
+                <div className='col-11 col-md-6 mx-auto text-center'>
                     <h2 className="mb-4">
                         <i className="fa-solid fa-envelope fs-3 me-3 mb-2" />
                         Contact Me
@@ -230,7 +223,7 @@ export const Home = () => {
                                 style={{ textDecoration: "none" }}
                             >
                                 <span className="text-white">
-                                    <img src={Tiktok} width={20} className="mb-2" />
+                                    <img src={Tiktok} width={20} alt="Icon of tiktok logo" className="mb-2" />
                                 </span>
                             </a>
                         </MDBCol>

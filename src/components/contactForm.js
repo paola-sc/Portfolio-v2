@@ -71,7 +71,7 @@ export const ContactForm = () => {
 
             <button
                 type="submit"
-                className="btn btn-dark col-xs-3 col-3 col-md-2 col-lg-2 col-xl-2 p-2 fs-4"
+                className="btn btn-dark py-2 px-3 fs-4"
                 onClick={handleShow}
             >
                 Send
@@ -98,7 +98,7 @@ export const ContactForm = () => {
                     </h3>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="dark" className="p-2 px-3" onClick={handleClose}>
+                    <Button variant="dark" className="p-2 px-4" onClick={handleClose}>
                         <h4 className="m-0">Close</h4>
                     </Button>
                 </Modal.Footer>

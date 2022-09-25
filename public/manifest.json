@@ -1,0 +1,26 @@
+{
+  "name": "Paola's Portfolio",
+  "short_name": "Paola's Web Dev Portfolio",
+  "icons": [
+    {
+      "src": "favicon-16x16",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-32x32",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
+
+

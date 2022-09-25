@@ -29,7 +29,7 @@ export const Modal1 = (props) => {
 
                     <div className='m-3 d-flex inline-flex justify-content-around'>
                         <a
-                            href="https://github.com/paola-codes/RoadBros.git"
+                            href="https://github.com/paola-codes/Makeup-Store"
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             <h3 className="">
