@@ -9,6 +9,7 @@ import { Modal3 } from '../components/modal3';
 import Tiktok from "../images/tiktok.png";
 import Plus from "../images/plus-sign.png";
 import Phone from "../images/phone2.png";
+import Makeup from "../images/makeup-store.png";
 
 export const Home = () => {
 
@@ -21,7 +22,7 @@ export const Home = () => {
 
             {/* Navbar Starts */}
             <Navbar style={{ backgroundColor: "#1c1d1f" }} sticky="top" expand="lg" variant="dark">
-                <Container fluid className="mx-3 my-1 pt-1">
+                <Container fluid className="col-11 mx-auto my-1 pt-1">
                     <Navbar.Brand>
                         <a href="#home" className="text-decoration-none text-white">
                             <h2>Paola Sanchez</h2>
@@ -128,8 +129,8 @@ export const Home = () => {
                     <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
                         <div className='mx-auto'>
                             <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image" src={Phone} alt="Project thumbnail" />
-                                <div class="overlay" onClick={() => setModalShow1(true)} >
+                                <img className="img-fluid image rounded-4 shadow-lg" src={Makeup} alt="Thumbnail for an online makeup store" />
+                                <div class="overlay rounded-4" onClick={() => setModalShow1(true)} >
                                     <div className='d-flex align-items-center justify-content-center h-100 w-100'>
                                         <img src={Plus} width={100} alt="Plus sign" />
                                     </div>
@@ -140,8 +141,8 @@ export const Home = () => {
                     <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
                         <div className='mx-auto'>
                             <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image" src={Phone} alt="Project thumbnail"/>
-                                <div class="overlay" onClick={() => setModalShow2(true)}>
+                                <img className="img-fluid image rounded-4 shadow-lg" src={Phone} alt="Project thumbnail"/>
+                                <div class="overlay rounded-4" onClick={() => setModalShow2(true)}>
                                     <div className='d-flex align-items-center justify-content-center h-100 w-100'>
                                         <img src={Plus} width={100} alt="Plus sign"/>
                                     </div>
@@ -152,8 +153,8 @@ export const Home = () => {
                     <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
                         <div className='mx-auto'>
                             <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image" src={Phone} alt="Project thumbnail"/>
-                                <div class="overlay" onClick={() => setModalShow3(true)} >
+                                <img className="img-fluid image rounded-4 shadow-lg" src={Phone} alt="Project thumbnail"/>
+                                <div class="overlay rounded-4" onClick={() => setModalShow3(true)} >
                                     <div className='d-flex align-items-center justify-content-center h-100 w-100'>
                                         <img src={Plus} width={100} alt="Plus sign" />
                                     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import RoadBros from "../images/phone2.png";
+import Img from "../images/makeup-store.png"
 
 export const Modal1 = (props) => {
     return (
@@ -16,15 +17,15 @@ export const Modal1 = (props) => {
                 <div className='text-center'>
                     <div className='mb-3'>
                         <h1>
-                            RoadBros
+                            The Beauty Store
                         </h1>
-                        <span className="fs-2 fst-italic">
-                            "The road assistance app."
+                        <span className="fs-3">
+                            React, Bootstrap, REST API
                         </span>
                     </div>
 
                     <div className="m-3 my-4">
-                        <img className="img-fluid rounded" src={RoadBros} />
+                        <img className="img-fluid rounded shadow" src={Img} alt="Thumbnail for an online makeup store" />
                     </div>
 
                     <div className='m-3 d-flex inline-flex justify-content-around'>
@@ -38,7 +39,7 @@ export const Modal1 = (props) => {
                             </h3>
                         </a>
                         <a
-                            href=""
+                            href="https://thebeautystore.netlify.app/"
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             <h3 className="">
