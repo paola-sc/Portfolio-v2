@@ -38,6 +38,9 @@ export const Home = () => {
                             <a href="#contact" className="text-decoration-none text-white me-4">
                                 <Nav.Item>Contact</Nav.Item>
                             </a>
+                            <a href="#portfolio" className="text-decoration-none text-white me-4">
+                                <Nav.Item>Portfolio</Nav.Item>
+                            </a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -50,7 +53,7 @@ export const Home = () => {
             >
                 <div className="d-flex justify-content-center align-items-center h-100">
                     <div className="text-white text-center">
-                        <div className='col-2 mx-auto mb-3'>
+                        <div className='col-4 col-md-3 mx-auto mb-3'>
                             <img src={Pic} className="img-fluid rounded rounded-circle" />
                         </div>
 
@@ -58,12 +61,9 @@ export const Home = () => {
                         <h1 className="mb-3">
                             Welcome to my page!
                         </h1>
-                        <h3 className="mb-4">
+                        <h3 className="mb-4 mb-md-5">
                             My name is Paola, I am front-end developer based in Florida, US.
                         </h3>
-
-                        {/* Call to Action */}
-                        <a className="btn btn-dark text-white px-3 pt-3" href="#portfolio" role="button"><h4>Check my portfolio</h4></a>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@ export const Home = () => {
             <div className="m-5" id="about">
                 {/* Header */}
                 <div className='col-11 col-md-6 mx-auto text-center'>
-                    <h2 className="mb-4">
+                    <h2 className="mb-4 pt-md-4">
                         <i className="fa-solid fa-user fs-3 me-3 mb-2" />
                         About Me
                         <hr className="featurette-divider mt-3" />
@@ -108,7 +108,7 @@ export const Home = () => {
             <div className="m-5" id="portfolio">
                 {/* Header */}
                 <div className='col-11 col-md-6 mx-auto text-center'>
-                    <h2 className="mb-4">
+                    <h2 className="mb-4 pt-md-4">
                         <i className="fa-solid fa-laptop fs-3 me-3 mb-2" />
                         Portfolio
                         <hr className="featurette-divider mt-3" />
@@ -169,7 +169,7 @@ export const Home = () => {
             <div className="m-5" id="contact">
                 {/* Header */}
                 <div className='col-11 col-md-6 mx-auto text-center'>
-                    <h2 className="mb-4">
+                    <h2 className="mb-4 pt-md-4">
                         <i className="fa-solid fa-envelope fs-3 me-3 mb-2" />
                         Contact Me
                         <hr className="featurette-divider mt-3" />
