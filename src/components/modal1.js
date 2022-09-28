@@ -1,34 +1,34 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import RoadBros from "../images/phone2.png";
-import Img from "../images/makeup-store.png"
+import { YoutubeEmbed } from './YoutubeEmbed';
 
 export const Modal1 = (props) => {
     return (
         <Modal
             {...props}
+            size="lg"
             centered
         >
             <Modal.Body>
                 <div className='d-flex justify-content-end'>
-                    <div onClick={props.onHide} className="cursor"><i class="fa-solid fa-xmark fa-3x mt-1 me-3"></i></div>
+                    <div onClick={props.onHide} className="cursor"><i class="fa-solid fa-xmark fa-3x  me-3"></i></div>
                 </div>
 
                 <div className='text-center'>
-                    <div className='mb-3'>
-                        <h1>
+                    <div className='p-0'>
+                        <h1 className='mb-3'>
                             The Beauty Store
                         </h1>
-                        <span className="fs-3">
-                            React, Bootstrap, REST API
-                        </span>
+                        <h3 className='m-0'>
+                            Made with: React, Bootstrap, and a REST API
+                        </h3>
                     </div>
 
-                    <div className="m-3 my-4">
-                        <img className="img-fluid rounded shadow" src={Img} alt="Thumbnail for an online makeup store" />
+                    <div className="m-3 m-lg-4 mx-lg-5">
+                        <YoutubeEmbed embedId="wMO8vqrIGCA" />
                     </div>
 
-                    <div className='m-3 d-flex inline-flex justify-content-around'>
+                    <div className='mx-3 my-2 d-flex inline-flex justify-content-around'>
                         <a
                             href="https://github.com/paola-codes/Makeup-Store"
                             style={{ textDecoration: "none", color: "black" }}

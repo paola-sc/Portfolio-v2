@@ -10,6 +10,7 @@ import Tiktok from "../images/tiktok.png";
 import Plus from "../images/plus-sign.png";
 import Phone from "../images/phone2.png";
 import Makeup from "../images/makeup-store.png";
+import Pic from "../images/Me.png";
 
 export const Home = () => {
 
@@ -49,11 +50,15 @@ export const Home = () => {
             >
                 <div className="d-flex justify-content-center align-items-center h-100">
                     <div className="text-white text-center">
+                        <div className='col-2 mx-auto mb-3'>
+                            <img src={Pic} className="img-fluid rounded rounded-circle" />
+                        </div>
+
                         {/* Hero Text */}
                         <h1 className="mb-3">
                             Welcome to my page!
                         </h1>
-                        <h3 className="mb-5">
+                        <h3 className="mb-4">
                             My name is Paola, I am front-end developer based in Florida, US.
                         </h3>
 
@@ -125,39 +130,33 @@ export const Home = () => {
                 />
 
                 {/* Projects */}
-                <div className='row justify-content-center flex-wrap'>
-                    <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
-                        <div className='mx-auto'>
-                            <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image rounded-4 shadow-lg" src={Makeup} alt="Thumbnail for an online makeup store" />
-                                <div class="overlay rounded-4" onClick={() => setModalShow1(true)} >
-                                    <div className='d-flex align-items-center justify-content-center h-100 w-100'>
-                                        <img src={Plus} width={100} alt="Plus sign" />
-                                    </div>
+                <div className='row d-flex justify-content-around d-inline-flex flex-wrap mt-3 mb-1'>
+                    <div className='col-12 col-md-4'>
+                        <div className='imageContainer d-flex align-items-center justify-content-center h-100 w-100'>
+                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={Makeup} alt="Project thumbnail" />
+                            <div class="overlay rounded-4" onClick={() => setModalShow1(true)}>
+                                <div className='d-flex align-items-center justify-content-center h-100 w-100'>
+                                    <img src={Plus} alt="Plus sign" style={{ width: "30%" }} />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
-                        <div className='mx-auto'>
-                            <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image rounded-4 shadow-lg" src={Phone} alt="Project thumbnail"/>
-                                <div class="overlay rounded-4" onClick={() => setModalShow2(true)}>
-                                    <div className='d-flex align-items-center justify-content-center h-100 w-100'>
-                                        <img src={Plus} width={100} alt="Plus sign"/>
-                                    </div>
+                    <div className='col-12 col-md-4 my-4 my-md-0'>
+                        <div className='imageContainer d-flex align-items-center justify-content-center h-100 w-100'>
+                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={Phone} alt="Project thumbnail" />
+                            <div class="overlay rounded-4" onClick={() => setModalShow2(true)}>
+                                <div className='d-flex align-items-center justify-content-center h-100 w-100'>
+                                    <img src={Plus} alt="Plus sign" style={{ width: "30%" }} />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-xs-12 col-sm-11 col-md-8 col-lg-5 col-xl-5 m-3'>
-                        <div className='mx-auto'>
-                            <div className='image-container d-flex align-items-center justify-content-center h-100 w-100'>
-                                <img className="img-fluid image rounded-4 shadow-lg" src={Phone} alt="Project thumbnail"/>
-                                <div class="overlay rounded-4" onClick={() => setModalShow3(true)} >
-                                    <div className='d-flex align-items-center justify-content-center h-100 w-100'>
-                                        <img src={Plus} width={100} alt="Plus sign" />
-                                    </div>
+                    <div className='col-12 col-md-4'>
+                        <div className='imageContainer d-flex align-items-center justify-content-center h-100 w-100'>
+                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={Phone} alt="Project thumbnail" />
+                            <div class="overlay rounded-4" onClick={() => setModalShow3(true)}>
+                                <div className='d-flex align-items-center justify-content-center h-100 w-100'>
+                                    <img src={Plus} alt="Plus sign" style={{ width: "30%" }} />
                                 </div>
                             </div>
                         </div>
@@ -193,7 +192,7 @@ export const Home = () => {
 
                         <MDBCol lg="6" md="12" className="mt-4 mb-3">
                             <a
-                                href="www.linkedin.com/in/paola-sanchez98"
+                                href="https://www.linkedin.com/in/paola-sanchez98"
                                 style={{ textDecoration: "none" }}
                             >
                                 <span className="text-white">
