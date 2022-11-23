@@ -1,44 +1,39 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import RoadBros from "../images/phone2.png";
+import WPvideo from "../videos/clear-skies-spa-video.mp4"
 
 export const Modal3 = (props) => {
   return (
     <Modal
       {...props}
+      size="lg"
       centered
     >
       <Modal.Body>
         <div className='d-flex justify-content-end'>
-          <div onClick={props.onHide} className="cursor"><i class="fa-solid fa-xmark fa-3x mt-1 me-3"></i></div>
+          <div onClick={props.onHide} className="cursor"><i className="fa-solid fa-xmark fa-3x mt-1 me-3"></i></div>
         </div>
 
-        <div className='text-center'>
-          <div className='mb-3'>
-            <h1>
-              RoadBros
+        <div className="text-center">
+          <div className='p-0'>
+            <h1 className='mb-3'>
+              Clear Skies Spa
             </h1>
-            <span className="fs-2 fst-italic">
-              "The road assistance app."
-            </span>
+            <h3 className='m-0 fs-3 fw-light'>
+              Made with: Wordpress
+            </h3>
           </div>
 
-          <div className="m-3 my-4">
-            <img className="img-fluid rounded" src={RoadBros}/>
+          <div className="mx-1 m-lg-4 mx-lg-5">
+            <video height="360" controls>
+              <source src={WPvideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
-          <div className='m-3 d-flex inline-flex justify-content-around'>
+          <div className='mx-3 my-2 d-flex inline-flex justify-content-around'>
             <a
-              href="https://github.com/paola-codes/RoadBros.git"
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              <h3 className="">
-                <i className="fa-brands fa-github fs-4 me-2" />
-                GitHub repo
-              </h3>
-            </a>
-            <a
-              href=""
+              href="https://spa81.wordpress.com/"
               style={{ textDecoration: "none", color: "black" }}
             >
               <h3 className="">

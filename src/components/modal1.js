@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { YoutubeEmbed } from './YoutubeEmbed';
+// import { YoutubeEmbed } from './YoutubeEmbed';
+import MSvideo from "../videos/makeup-store-video.mp4"
 
 export const Modal1 = (props) => {
     return (
@@ -11,7 +12,7 @@ export const Modal1 = (props) => {
         >
             <Modal.Body>
                 <div className='d-flex justify-content-end'>
-                    <div onClick={props.onHide} className="cursor"><i class="fa-solid fa-xmark fa-3x  me-3"></i></div>
+                    <div onClick={props.onHide} className="cursor"><i className="fa-solid fa-xmark fa-3x  me-3"></i></div>
                 </div>
 
                 <div className='text-center'>
@@ -19,13 +20,17 @@ export const Modal1 = (props) => {
                         <h1 className='mb-3'>
                             The Beauty Store
                         </h1>
-                        <h3 className='m-0'>
+                        <h3 className='m-0 fs-3 fw-light'>
                             Made with: React, Bootstrap, and a REST API
                         </h3>
                     </div>
 
-                    <div className="m-3 m-lg-4 mx-lg-5">
-                        <YoutubeEmbed embedId="wMO8vqrIGCA" />
+                    <div className="mx-1 m-lg-4 mx-lg-5">
+                        <video height="360" controls>
+                            <source src={MSvideo} type="video/mp4"/>
+                                Your browser does not support the video tag.
+                        </video>
+                        {/* <YoutubeEmbed embedId="wMO8vqrIGCA" /> */}
                     </div>
 
                     <div className='mx-3 my-2 d-flex inline-flex justify-content-around'>

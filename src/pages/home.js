@@ -9,7 +9,9 @@ import { Modal3 } from '../components/modal3';
 import Tiktok from "../images/tiktok.png";
 import Plus from "../images/plus-sign.png";
 import Phone from "../images/phone2.png";
-import Makeup from "../images/makeup-store.png";
+import MS from "../images/ms-pic.png";
+import SF from "../images/sf-pic.png";
+import WP from "../images/wp-pic.png";
 import Pic from "../images/Me.png";
 
 export const Home = () => {
@@ -70,7 +72,7 @@ export const Home = () => {
             {/*Hero Section Ends */}
 
             {/*About Section Starts */}
-            <div className="m-3 m-md-5" id="about">
+            <div className="m-3 m-md-5 pt-3 pt-md-2" id="about">
                 {/* Header */}
                 <div className='col-11 col-md-6 mx-auto text-center'>
                     <h2 className="mb-4 pt-md-4">
@@ -105,7 +107,7 @@ export const Home = () => {
             {/*About Section Ends */}
 
             {/* Portfolio Section Starts */}
-            <div className="m-3 m-md-5" id="portfolio">
+            <div className="m-3 m-md-5 pb-4 pt-4 pt-md-0" id="portfolio">
                 {/* Header */}
                 <div className='col-11 col-md-6 mx-auto text-center'>
                     <h2 className="mb-4 pt-md-4">
@@ -133,8 +135,8 @@ export const Home = () => {
                 <div className='row d-flex justify-content-around d-inline-flex flex-wrap mt-3 mb-1 mx-3 mx-md-5'>
                     <div className='col-12 col-md-4'>
                         <div className='imageContainer d-flex align-items-center justify-content-center h-100 w-100'>
-                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={Makeup} alt="Project thumbnail" />
-                            <div class="overlay rounded-4" onClick={() => setModalShow1(true)}>
+                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={MS} alt="Project thumbnail" />
+                            <div className="overlay rounded-4" onClick={() => setModalShow1(true)}>
                                 <div className='d-flex align-items-center justify-content-center h-100 w-100'>
                                     <img src={Plus} alt="Plus sign" style={{ width: "30%" }} />
                                 </div>
@@ -143,8 +145,8 @@ export const Home = () => {
                     </div>
                     <div className='col-12 col-md-4 my-4 my-md-0'>
                         <div className='imageContainer d-flex align-items-center justify-content-center h-100 w-100'>
-                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={Phone} alt="Project thumbnail" />
-                            <div class="overlay rounded-4" onClick={() => setModalShow2(true)}>
+                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={SF} alt="Project thumbnail" />
+                            <div className="overlay rounded-4" onClick={() => setModalShow2(true)}>
                                 <div className='d-flex align-items-center justify-content-center h-100 w-100'>
                                     <img src={Plus} alt="Plus sign" style={{ width: "30%" }} />
                                 </div>
@@ -153,8 +155,8 @@ export const Home = () => {
                     </div>
                     <div className='col-12 col-md-4'>
                         <div className='imageContainer d-flex align-items-center justify-content-center h-100 w-100'>
-                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={Phone} alt="Project thumbnail" />
-                            <div class="overlay rounded-4" onClick={() => setModalShow3(true)}>
+                            <img className="image rounded-4 border border-secondary border-2 border-opacity-50" src={WP} alt="Project thumbnail" />
+                            <div className="overlay rounded-4" onClick={() => setModalShow3(true)}>
                                 <div className='d-flex align-items-center justify-content-center h-100 w-100'>
                                     <img src={Plus} alt="Plus sign" style={{ width: "30%" }} />
                                 </div>
@@ -166,7 +168,7 @@ export const Home = () => {
             {/* Portfolio Section Ends */}
 
             {/* Contact Section Starts */}
-            <div className="m-3 m-md-5" id="contact">
+            <div className="m-3 m-md-5 pb-5 pt-5 pt-md-0" id="contact">
                 {/* Header */}
                 <div className='col-11 col-md-6 mx-auto text-center'>
                     <h2 className="mb-4 pt-md-4">
