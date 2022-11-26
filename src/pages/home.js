@@ -8,7 +8,6 @@ import { Modal2 } from '../components/modal2';
 import { Modal3 } from '../components/modal3';
 import Tiktok from "../images/tiktok.png";
 import Plus from "../images/plus-sign.png";
-import Phone from "../images/phone2.png";
 import MS from "../images/ms-pic.png";
 import SF from "../images/sf-pic.png";
 import WP from "../images/wp-pic.png";
@@ -63,9 +62,20 @@ export const Home = () => {
                         <h1 className="mb-3">
                             Welcome to my page!
                         </h1>
+
                         <h3 className="mb-4 mb-md-5">
                             My name is Paola, I am front-end developer based in Florida, US.
                         </h3>
+
+                        <button type="button" class="btn btn-secondary fs-4 mb-2">
+                            <a
+                                href="/Paola_Sanchez_Resume.pdf"
+                                download
+                                style={{ textDecoration: "none", color: "white" }}
+                            >
+                                Download Resume
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
