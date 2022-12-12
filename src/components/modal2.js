@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import SFvideo from "../videos/candy-store-video.mp4"
+import MEvideo from "../videos/metrics-page-video.mp4"
 
 export const Modal2 = (props) => {
   return (
@@ -17,23 +17,32 @@ export const Modal2 = (props) => {
         <div className="text-center">
           <div className='p-0'>
             <h1 className='mb-3'>
-              Sugar Free
+              Metrics
             </h1>
             <h3 className='m-0 fs-3 fw-light'>
-              Made with: Shopify
+              Made with: React, bootstrap, Chart.js
             </h3>
           </div>
 
           <div className="mx-1 m-lg-4 mx-lg-5">
             <video height="360" controls>
-              <source src={SFvideo} type="video/mp4" />
+              <source src={MEvideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
           <div className='mx-3 my-2 d-flex inline-flex justify-content-around'>
             <a
-              href="https://sugarfree-shop.myshopify.com"
+              href="https://github.com/paola-codes/Metrics"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <h3 className="">
+                <i className="fa-brands fa-github fs-4 me-2" />
+                GitHub repo
+              </h3>
+            </a>
+            <a
+              href="https://metrics-page.netlify.app"
               style={{ textDecoration: "none", color: "black" }}
             >
               <h3 className="">
