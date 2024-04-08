@@ -69,7 +69,7 @@ export const Home = () => {
 
                         <button type="button" class="btn btn-secondary fs-4 mb-2">
                             <a
-                                href="/Paola_Sanchez_Resume.pdf"
+                                href="/paola_sanchez_resume.pdf"
                                 download
                                 style={{ textDecoration: "none", color: "white" }}
                             >
