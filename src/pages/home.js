@@ -215,29 +215,11 @@ export const Home = () => {
                             </a>
 
                             <a
-                                href="https://github.com/paola-codes"
+                                href="https://github.com/paola-sc"
                                 style={{ textDecoration: "none" }}
                             >
                                 <span className="text-white">
                                     <i className="fab fa-github fs-4 me-3" />
-                                </span>
-                            </a>
-
-                            <a
-                                href="https://www.instagram.com/paola_codes/"
-                                style={{ textDecoration: "none" }}
-                            >
-                                <span className="text-white">
-                                    <i className="fab fa-instagram fs-4 me-3" />
-                                </span>
-                            </a>
-
-                            <a
-                                href="https://www.tiktok.com/@paola_codes"
-                                style={{ textDecoration: "none" }}
-                            >
-                                <span className="text-white">
-                                    <img src={Tiktok} width={20} alt="Icon of tiktok logo" className="mb-2" />
                                 </span>
                             </a>
                         </MDBCol>
